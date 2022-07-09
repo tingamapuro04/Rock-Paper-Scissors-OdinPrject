@@ -1,57 +1,66 @@
-let choice = document.querySelector('#choice').value.trim().toLocaleLowerCase();
-const form = document.querySelector('#submit');
-const rom = document.querySelector('.form')
+// const playerValue = prompt('what do you play?');
+const mobutu = document.getElementById('mobutu');
+const tie = document.getElementById('tie');
+const win = document.getElementById('win');
+const form = document.querySelector('.form')
+const counter = document.querySelector('#winCounter')
+const playerValue = document.querySelector('#choice');
 
-const computerPlay = (jatugo) => {
-  const compPlay =['Rock', 'Paper', 'Scissors'];
-  let guess = Math.floor(Math.random()*3);
-  const computer = compPlay[guess].toLocaleLowerCase();
-  let wins =0
-  if (jatugo !== '') {
-    if (jatugo === computer) {
-      wins ++
-      console.log(`Yeeeey! You won💯💯🎉✨ ${wins}`)
-    } else {
-      console.log("OOOOHHH 🥱😫 machine beats man again (❁´◡`❁)")
+const computerValue = () => {
+  const choiceList = ["rock", 'paper', "scissors"]
+  const choice = Math.floor(Math.random() *3);
+  return choiceList[choice];
+};
+
+const Play = (player, computer) => {
+  if (player === 'rock' || player === 'paper' || player === 'scissors') {
+    if (computer === 'rock') {
+      if (player === 'rock') {
+        win.innerHTML = "It is a tie 👽";
+      }
+      if (player === 'scissors') {
+        win.innerHTML= "Nooo, you lost to the computer 😉😉";
+      };
+      if (player === "paper") {
+        win.innerHTML = "Yeees, you win 🎈🎈";
+      }
+    };
+
+    if (computer === 'paper') {
+      if (player === 'rock') {
+        win.innerHTML = "Nooo, you lost to the computer 😉😉";
+      }
+      if (player === 'scissors') {
+        win.innerHTML = "Yeees, you win 🎈🎈";
+      };
+      if (player === "paper") {
+        win.innerHTML = "It is a tie 👽";
+      }
     }
+
+
+    if (computer === 'scissors') {
+      if (player === 'rock') {
+        win.innerHTML = "Yeees, you win 🎈🎈";
+      }
+      if (player === 'scissors') {
+        win.innerHTML = "It is a tie 👽";
+      };
+      if (player === "paper") {
+        win.innerHTML = "Nooo, you lost to the computer 😉😉";
+      }
+    }
+    
   } else {
-    console.log("Please enter a value")
+    win.innerHTML="Please enter a valid value. Allowed values are (rock), (paper) or (scissors)!";
   }
-  choice = ''
 };
 
 
-window.onload = computerPlay(choice)
-
-// rom.addEventListener('submit', (e) => {
-//   e.preventDefault()
-//   computerPlay(choice)
-// })
-
-// const computer = computerPlay();
-
-// let wins = 0;
-// const game = (User, Comp) => {
-//   if (User !== '') {
-//     if (User === Comp) {
-//     wins ++
-//     console.log(`Yeeeey! You won💯💯🎉✨ ${wins}`)
-//     } else {
-//       console.log("OOOOHHH 🥱😫 machine beats man again (❁´◡`❁)")
-//     }
-//   } else {
-//     console.log('Please enter a value')
-//   }
-  
-// }
 
 
-
-// form.addEventListener('click', (e) => {
-//   game(choice, computer)
-//   e.preventDefault()
-// })
-
-
-
-// game(choice, computer)
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  Play(playerValue.value.trim(), computerValue())
+  form.reset()
+})
