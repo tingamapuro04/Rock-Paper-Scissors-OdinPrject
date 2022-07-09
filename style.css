@@ -1,0 +1,16 @@
+#mobutu {
+  color: whitesmoke;
+  background: red;
+  font-size: 1.5rem;
+}
+
+#win {
+  background: green;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+#tie {
+  background: rgba(255, 255, 0, 0.682);
+  font-size: 1.5rem;
+}

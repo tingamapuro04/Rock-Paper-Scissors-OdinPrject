@@ -1,40 +1,38 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+Rock-Paper_scissors
 
-> Description the project.
+> A little odin project where one can play the famous Chinese game rock-paper-scissors
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Languges used => HTML, JavaScript, CSS
+- Technologies used => git
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://tingamapuro04.github.io/Rock-Paper-Scissors-OdinPrject/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
+
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+Basic understanding of HTML, css, javascript, cli and you need a a pc.
 ### Setup
-
+Locate where you want to set up this project on your local machine
 ### Install
+- In your terminal run $ git clone [link](https://github.com/tingamapuro04/Rock-Paper-Scissors-OdinPrject)
+- Change the working directory by running $ cd Rock-Paper-Scissors
+- then run $ code . to open the project in your preffered editor.
 
-### Usage
-
-### Run tests
-
-### Deployment
 
 
 
@@ -42,31 +40,19 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Name: Alphonce.
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/tingamapuro04/Rock-Paper-Scissors-OdinPrject/issues/1).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
